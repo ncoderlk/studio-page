@@ -17,20 +17,44 @@
   <nav class="container w-full mx-auto relative pt-2 p-6 bg-transparent">
     <div class="flex items-center justify-between">
       <div class="w-36 pt-2 logo"><img src="./images/logo.png" class="w-36 pt-2" /></div>
-      <div class="hidden lg:flex space-x-2 p-2 sticky links">
+      <div class="sticky links">
+
+        <div class="hidden lg:flex space-x-2 p-2">
+          <a href="" class="p-2 pb-0 text-gray-700 hover:text-blue-500 hover:border-b-2">Home</a>
+          <a href="" class="p-2 pb-0 text-gray-700 hover:text-blue-500 hover:border-b-2">About Us</a>
+          <a href="" class="p-2 pb-0 text-gray-700 hover:text-blue-500 hover:border-b-2">Services</a>
+          <a href="" class="p-2 pb-0 text-gray-700 hover:text-blue-500 hover:border-b-2">Contact Us</a>
+          <a href="" class="p-2 pb-0 text-gray-700 hover:text-blue-500 hover:border-b-2">Projects</a>
+        </div>
+
+
+
+
+        <div class="lg:hidden space-x-2 p-2  mt-2 links">
+          <button id="menuButton" class="block hamburger lg:hidden focus:outline-none right-10 fixed">
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="lg:hidden">
+      <div id="menu"
+        class="absolute rounded-2xl hidden flex-col items-center self-end py-8 mt-5 space-y-2 font-bold  sm:w-auto md:w-auto lg:w-auto sm:self-center left-1/3 right-0 drop-shadow-md bg-white">
 
         <a href="" class="p-2 pb-0 text-gray-700 hover:text-blue-500 hover:border-b-2">Home</a>
         <a href="" class="p-2 pb-0 text-gray-700 hover:text-blue-500 hover:border-b-2">About Us</a>
         <a href="" class="p-2 pb-0 text-gray-700 hover:text-blue-500 hover:border-b-2">Services</a>
         <a href="" class="p-2 pb-0 text-gray-700 hover:text-blue-500 hover:border-b-2">Contact Us</a>
         <a href="" class="p-2 pb-0 text-gray-700 hover:text-blue-500 hover:border-b-2">Projects</a>
-      </div>
-    </div>
 
-    <!--------->
+      </div>
+      <!--------->
   </nav>
   <!--Navigation Bar Ended-->
-  <div class="container w-full h-full">
+  <div class=" container w-full h-full">
     <!--Effects-->
     <div class="hidden md:block w-64 h-64 rounded-full circle1 border-2 blue-border fixed top-32 -left-8"></div>
     <div class="hidden md:block w-64 h-64 rounded-full circle2 border-2 fixed bottom-14 -right-8"></div>
@@ -44,8 +68,27 @@
       </aside>
     </div>
     <!--Text Content Ended-->
-
+    <!---Mobile Resolution-->
+    <div class="block md:hidden w-32 h-32 rounded-full circle1 border-2 blue-border fixed top-32 -left-8"></div>
+    <div class="block md:hidden w-32 h-32 rounded-full circle2 border-2 fixed bottom-14 -right-8"></div>
+    <!---------------------->
   </div>
+
+  <script>
+
+
+    const btn = document.getElementById('menuButton');
+    const menu = document.getElementById('menu');
+
+    btn.addEventListener('click', () => {
+
+      btn.style.outline = "none"
+      btn.classList.toggle('open')
+      menu.classList.toggle('flex')
+      menu.classList.toggle('hidden')
+
+    })
+  </script>
 </body>
 
 </html>
