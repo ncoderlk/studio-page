@@ -55,41 +55,162 @@
       <!--------->
   </nav>
   <!--Navigation Bar Ended-->
-  <div class=" container w-full h-full">
-    <!--Effects-->
-    <div class="hidden md:block w-64 h-64 rounded-full circle1 border-2 blue-border fixed top-32 -left-8"></div>
-    <div class="hidden md:block w-64 h-64 rounded-full circle2 border-2 fixed bottom-14 -right-8"></div>
-    <!--Effects-->
+  <section id="home">
+    <div class=" container w-full h-full max-w-max ">
+      <!--Effects-->
+      <div class="hidden z-50 md:block w-64 h-64 rounded-full circle1 border-2 blue-border fixed top-32 -left-8"></div>
+      <div class="hidden z-50 md:block w-64 h-64 rounded-full circle2 border-2 fixed bottom-14 -right-8"></div>
+      <!--Effects-->
 
-    <!--Text Content Started-->
-    <div class="hidden lg:block w-1/2 h-full mx-auto">
-      <aside class="w-max h-full mx-auto fixed top-1/2 ">
-        <h1 class="rubik-font"><span class="blue-border">Welcome</span> To Light <span class="text-white">Studio</span>
+      <!--Text Content Started-->
+      <div class="hidden lg:block w-1/2 h-full mx-auto">
+        <aside class="w-max h-full mx-auto fixed top-1/2 ">
+          <h1 class="rubik-font"><span class="blue-border">Welcome</span> To Light <span
+              class="text-white">Studio</span>
+          </h1>
+        </aside>
+      </div>
+      <!--Text Content Ended-->
+      <!---Mobile Resolution-->
+      <div class="block md:hidden w-32 h-32 rounded-full circle1 border-2 blue-border fixed top-32 -left-8">
+      </div>
+      <div class="block md:hidden w-32 h-32 rounded-full circle2 border-2 fixed bottom-14 -right-8"></div>
+      <div class="lg:hidden w-full h-full mx-auto fixed text-center justify-center items-center flex">
+        <h1 class="rubik-font-mob text-center mx-auto top-1/3 fixed"><span class="blue-border">Welcome</span>
+          <span class="text-slate-700 mb-36">To
+            Light </span><span class="text-black">Studio</span>
         </h1>
-      </aside>
+      </div>
+      <!---------------------->
+
     </div>
-    <!--Text Content Ended-->
-    <!---Mobile Resolution-->
-    <div class="block md:hidden w-32 h-32 rounded-full circle1 border-2 blue-border fixed top-32 -left-8"></div>
-    <div class="block md:hidden w-32 h-32 rounded-full circle2 border-2 fixed bottom-14 -right-8"></div>
-    <!---------------------->
-  </div>
-
-  <script>
+  </section>
+  <section id="features" class="sticky md:pl-36">
+    <div class="container backdrop:hidden flex w-full h-full  text-black text-center">
 
 
-    const btn = document.getElementById('menuButton');
-    const menu = document.getElementById('menu');
+      <!--Flex Container-->
 
-    btn.addEventListener('click', () => {
+      <div class="container flex flex-col px-2 mx-auto mt-10 space-y-10 md:space-y-0 md:flex-row">
 
-      btn.style.outline = "none"
-      btn.classList.toggle('open')
-      menu.classList.toggle('flex')
-      menu.classList.toggle('hidden')
+        <!--What's Diffrent-->
 
-    })
-  </script>
+        <div class="flex flex-col space-y-12 md:w-1/2">
+
+          <h2 class="max-w-md text-4xl font-bold text-center md:text-left text-black">
+            Our Work
+          </h2>
+
+          <p class="max-w-sm text-center  md:text-left">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates laboriosam tempora repellat
+            dolore labore? Voluptatem et cumque saepe quidem. Assumenda!
+          </p>
+
+        </div>
+
+        <!--Numbered List-->
+
+        <div class="flex flex-col space-y-8 md:w-1/2">
+
+          <!--Item 1-->
+
+          <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+
+            <div class="rounded-l-full  bg-red-500 md:bg-transparent">
+
+              <div class="flex items-center space-x-2">
+                <div class="px-4 py-2 text-white rounded-full md:py-1 bg-red-500">01</div>
+
+                <h3 class="text-base font-bold md:mb-4 md:hidden">Super Quality Service
+                </h3>
+
+              </div>
+            </div>
+
+
+            <div>
+              <h3 class="hidden mb-4 text-lg font-bold md:block">Super Quality Service</h3>
+              <p class="text-darkGrayishBlue">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Explicabo est quaerat repudiandae neque molestiae quo modi nihil impedit, laboriosam eius, a
+                inventore nostrum perspiciatis</p>
+            </div>
+
+          </div>
+
+          <!--Item 2-->
+
+          <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+
+            <div class="rounded-l-full  bg-red-500 md:bg-transparent">
+
+              <div class="flex items-center space-x-2">
+                <div class="px-4 py-2 text-white rounded-full md:py-1  bg-red-500">02</div>
+
+                <h3 class="text-base font-bold md:mb-4 md:hidden">World-Wide Fast Service
+                </h3>
+
+              </div>
+            </div>
+
+
+            <div>
+              <h3 class="hidden mb-4 text-lg font-bold md:block">World-Wide Fast Service</h3>
+              <p class="text-darkGrayishBlue">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Explicabo est quaerat repudiandae neque molestiae quo modi nihil impedit, laboriosam
+                eius, a
+                inventore nostrum perspiciatis</p>
+            </div>
+
+          </div>
+          <!--Item 3-->
+
+          <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+
+            <div class="rounded-l-full  bg-red-500 md:bg-transparent">
+
+              <div class="flex items-center space-x-2">
+                <div class="px-4 py-2 text-white rounded-full md:py-1  bg-red-500">03</div>
+
+                <h3 class="text-base font-bold md:mb-4 md:hidden">
+                  Best Photographers For Ever
+                </h3>
+
+              </div>
+            </div>
+
+
+            <div>
+              <h3 class="hidden mb-4 text-lg font-bold md:block">Best Photographers Ever</h3>
+              <p class="text-darkGrayishBlue">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Explicabo est quaerat repudiandae neque molestiae quo modi nihil impedit, laboriosam
+                eius, a
+                inventore nostrum perspiciatis</p>
+            </div>
+
+          </div>
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+    <script>
+
+
+      const btn = document.getElementById('menuButton');
+      const menu = document.getElementById('menu');
+
+      btn.addEventListener('click', () => {
+
+        btn.style.outline = "none"
+        btn.classList.toggle('open')
+        menu.classList.toggle('flex')
+        menu.classList.toggle('hidden')
+
+      })
+    </script>
 </body>
 
 </html>
