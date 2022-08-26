@@ -1481,10 +1481,6 @@ p {
 }
 
 @media (max-width: 576px) {
-  body {
-    background-size: 500px;
-  }
-
   #cta {
     background-image: url("../images/bg-simplify-section-mobile.svg");
   }
