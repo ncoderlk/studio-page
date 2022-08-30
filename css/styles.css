@@ -43,6 +43,10 @@
   position: sticky;
 }
 
+.top-0 {
+  top: 0px;
+}
+
 .right-10 {
   right: 2.5rem;
 }
@@ -91,16 +95,12 @@
   left: 0px;
 }
 
-.top-0 {
-  top: 0px;
+.z-10 {
+  z-index: 10;
 }
 
 .z-50 {
   z-index: 50;
-}
-
-.z-10 {
-  z-index: 10;
 }
 
 .mx-auto {
@@ -235,6 +235,10 @@
   max-width: 72rem;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -297,8 +301,8 @@
   align-self: flex-end;
 }
 
-.overflow-scroll {
-  overflow: scroll;
+.scroll-smooth {
+  scroll-behavior: smooth;
 }
 
 .rounded-2xl {
@@ -359,9 +363,8 @@
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
 }
 
-.bg-blue-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+.bg-scroll {
+  background-attachment: scroll;
 }
 
 .p-6 {
@@ -530,12 +533,6 @@
 
 .transition-all {
   transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.transition-transform {
-  transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -1094,8 +1091,9 @@ video {
 }
 
 .links a {
-  transition: 0.5 all linear;
+  transition: 1.5 all ease;
   color: #fff;
+  font-weight: bolder;
 }
 
 .logo {
@@ -1103,7 +1101,8 @@ video {
 }
 
 body,
-section {
+section,
+nav {
   height: 100%;
   background: linear-gradient(90deg, #fff 50%, #2009d4 50%);
   clear: both;
@@ -1138,23 +1137,33 @@ section {
   animation: circle2 5s infinite;
 }
 
-@-webkit-keyframes positionChange {
+/* @-webkit-keyframes positionChange {
   0% {
     transform: translateX(300px);
   }
 
   100% {
     transform-style: flat;
+  }
+} */
+
+@-webkit-keyframes positionChange {
+  25% {
+    transform: translateX(500px);
+  }
+
+  75% {
+    transform: translateX(300px);
   }
 }
 
 @keyframes positionChange {
-  0% {
-    transform: translateX(300px);
+  25% {
+    transform: translateX(500px);
   }
 
-  100% {
-    transform-style: flat;
+  75% {
+    transform: translateX(300px);
   }
 }
 
@@ -1294,6 +1303,18 @@ p {
   #cta {
     background-image: url("../images/bg-simplify-section-mobile.svg");
   }
+}
+
+.box-btn:hover {
+  box-shadow: 0 0 15px #000, 0 0 15px #000;
+}
+
+body {
+  transition: all 10s ease;
+}
+
+.box-btn-nh {
+  box-shadow: 0 0 15px #fff, 0 0 15px #ccc;
 }
 
 .backdrop\:hidden::-webkit-backdrop {

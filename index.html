@@ -15,18 +15,19 @@
   <title>LIGHT STUDIO</title>
 </head>
 
-<body class=" overflow-scroll">
+<body class="scroll-smooth bg-scroll">
   <!--Navigation Bar Started-->
-  <nav class="container w-full mx-auto z-10 relative pt-2 p-6 bg-transparent">
+  <nav class="container w-full mx-auto z-10 box-btn-nh top-0 sticky pt-2 p-6 bg-transparent">
     <div class="flex items-center justify-between">
       <div class="w-36 pt-2 logo"><img src="./images/logo.png" class="w-36 pt-2" /></div>
       <div class="sticky links">
 
         <div class="hidden lg:flex space-x-2 p-2">
-          <a href="" class="p-2 pb-0 text-gray-700 hover:text-blue-500 hover:border-b-2">Home</a>
-          <a href="" class="p-2 pb-0 text-gray-700 hover:text-blue-500 hover:border-b-2">About Us</a>
-          <a href="" class="p-2 pb-0 text-gray-700 hover:text-blue-500 hover:border-b-2">Services</a>
-          <a href="" class="p-2 pb-0 text-gray-700 hover:text-blue-500 hover:border-b-2">Contact Us</a>
+          <a onclick="scrolltp()"
+            class="p-2 pb-0 text-gray-700 hover:text-blue-500 hover:border-b-2 cursor-pointer">Home</a>
+          <a href="#features" class="p-2 pb-0 text-gray-700 hover:text-blue-500 hover:border-b-2">About Us</a>
+          <a href="#testimoniols" class="p-2 pb-0 text-gray-700 hover:text-blue-500 hover:border-b-2">Services</a>
+          <a href="#cta" class="p-2 pb-0 text-gray-700 hover:text-blue-500 hover:border-b-2">Contact Us</a>
         </div>
 
 
@@ -46,11 +47,13 @@
       <div id="menu"
         class="absolute rounded-2xl hidden flex-col items-center self-end py-8 mt-5 space-y-2 font-bold  sm:w-auto md:w-auto lg:w-auto sm:self-center left-1/3 right-0 drop-shadow-md bg-white">
 
-        <a href="" class="p-2 pb-0 text-gray-700 hover:text-blue-500 hover:border-b-2">Home</a>
-        <a href="" class="p-2 pb-0 text-gray-700 hover:text-blue-500 hover:border-b-2">About Us</a>
-        <a href="" class="p-2 pb-0 text-gray-700 hover:text-blue-500 hover:border-b-2">Services</a>
-        <a href="" class="p-2 pb-0 text-gray-700 hover:text-blue-500 hover:border-b-2">Contact Us</a>
-        <a href="" class="p-2 pb-0 text-gray-700 hover:text-blue-500 hover:border-b-2">Projects</a>
+        <a onclick="scrolltp()"
+          class="p-2 pb-0 text-gray-700 hover:text-blue-500 hover:border-b-2 cursor-pointer">Home</a>
+        <a href="#features" class="p-2 pb-0 text-gray-700 hover:text-blue-500 hover:border-b-2">About Us</a>
+        <a href="#testimoniols" class="p-2 pb-0 text-gray-700 hover:text-blue-500 hover:border-b-2">Services</a>
+        <a href="#cta" class="p-2 pb-0 text-gray-700 hover:text-blue-500 hover:border-b-2">Contact Us</a>
+        <a href="https://github.com/groovecoders"
+          class="p-2 pb-0 text-gray-700 hover:text-blue-500 hover:border-b-2">Projects</a>
 
       </div>
       <!--------->
@@ -70,7 +73,7 @@
               class="text-white">Studio</span>
           </h1>
           <div class=" sticky my-16 text-center justify-center items-center mx-auto w-full h-max flex"><a href=""
-              class="w-max  mx-auto p-3 justify-center items-center rounded-full px-6 pt-2 text-white  bg-black  hover:bg-gray-800 fixed left-1/2 right-1/2 ">Get
+              class="w-max  mx-auto p-3 justify-center items-center rounded-full px-6 pt-2 text-white  bg-black  box-btn fixed left-1/2 right-1/2 ">Get
               Started</a>
           </div>
         </aside>
@@ -90,7 +93,7 @@
 
     </div>
   </section>
-  <section id="features" class="sticky md:pl-36">
+  <section id="features" class="scroll-smooth sticky md:pl-36">
     <div class="container backdrop:hidden flex w-full h-full   text-black text-center">
 
 
@@ -205,7 +208,7 @@
 
     </div>
   </section>
-  <section id="testimoniols" class="sticky backdrop:hidden min-h-screen">
+  <section id="testimoniols" class="scroll-smooth sticky backdrop:hidden min-h-screen">
 
     <!--container-->
 
@@ -263,7 +266,7 @@
     </div>
   </section>
 
-  <section id="cta" class="bg-blue-500 sticky backdrop:hidden h-max max-h-10">
+  <section id="cta" class="scroll-smooth bg-blue-500 sticky backdrop:hidden h-max max-h-10">
     <!--Flex Container-->
     <div
       class="container flex flex-col items-center justify-between px-6 py-24 mx-auto space-y-12 md:py-12 md:flex-row md:space-y-0">
@@ -276,29 +279,15 @@
       <!--Button-->
       <div>
         <a href=""
-          class="w-max mx-auto p-3 rounded-full px-6 pt-2 shadow-2xl text-blue-700 bg-white baseline hover:bg-gray-900 md:block">Get
+          class="box-btn w-max mx-auto p-3 rounded-full px-6 pt-2 shadow-2xl text-blue-700 bg-white baseline hover:bg-gray-900 md:block">Get
           Started</a>
       </div>
     </div>
   </section>
-  <footer class="sticky backdrop:hidden h-full w-full">
+  <footer class="scroll-smooth sticky backdrop:hidden h-full w-full">
 
   </footer>
-  <script>
-
-
-    const btn = document.getElementById('menuButton');
-    const menu = document.getElementById('menu');
-
-    btn.addEventListener('click', () => {
-
-      btn.style.outline = "none"
-      btn.classList.toggle('open')
-      menu.classList.toggle('flex')
-      menu.classList.toggle('hidden')
-
-    })
-  </script>
+  <script src="./js/app.js"></script>
   <!------->
 </body>
 
