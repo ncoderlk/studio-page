@@ -17,7 +17,7 @@
 
 <body class="scroll-smooth bg-scroll">
   <!--Navigation Bar Started-->
-  <nav class="container w-full mx-auto z-10  top-0 sticky pt-2 p-6 bg-transparent">
+  <nav id="nav" class="container w-full mx-auto z-10  top-0 sticky pt-2 p-6 bg-transparent rounded-br-lg rounded-bl-lg">
     <div class="flex items-center justify-between">
       <div class="w-36 pt-2 logo"><img src="./images/logo.png" class="w-36 pt-2" /></div>
       <div class="sticky links">
@@ -266,10 +266,85 @@
     </div>
   </section>
 
-  <section id="cta" class="scroll-smooth bg-blue-500 sticky backdrop:hidden h-max max-h-10">
+  <section id="cta" class="scroll-smooth bg-blue-500 min-h-sreen sticky backdrop:hidden p-20">
     <!--Flex Container-->
+
+
+    <footer class="hidden md:block w-full h-full bg-transparent sticky z-9 mx-auto mt-32">
+      <h1 class="mx-auto text-5xl font-bold leading-tight text-center text-white md:text-4xl md:max-w-xl">Contact
+        Us</h1>
+      <div class="social-box flex flex-col md:flex-row mx-auto mt-20 justify-center items-center">
+
+        <!-- <div class="m-10 mx-auto"><img src="./images/icons/icon-facebook.svg" class="w-20 sticky l1" title="Facebook">
+          <span class="bg-slate-500 text-white text-center p-10 box-border m-4 hidden absolute  " id="t1">Connect Us
+            with</span>
+        </div>
+        <div class="m-10 mx-auto"><img src="./images/icons/icon-instagram.svg" class="w-20 sticky l2"
+            title="Instagram"><span class="bg-slate-500 text-white text-center p-10 box-border m-4 hidden  "
+            id="t2">loremsso</span></div>
+        <div class="m-10 mx-auto"><img src="./images/icons/icon-pinterest.svg" class="w-20 sticky l3"
+            title="Pinterest"><span class="bg-slate-500 text-white text-center p-10 box-border m-4 hidden  "
+            id="t3">loremsso</span></div>
+        <div class="m-10 mx-auto"><img src="./images/icons/icon-twitter.svg" class="w-20 sticky l4" title="Twitter">
+          <span class="bg-slate-500 text-white text-center p-10 box-border m-4 hidden  " id="t4">loremsso</span>
+        </div>
+        <div class="m-10 mx-auto"><img src="./images/icons/icon-youtube.svg" class="w-20 sticky l5" title="Youtube">
+          <span class="bg-slate-500 text-white text-center p-10 box-border m-4 hidden  " id="t5">loremsso</span>
+        </div> -->
+        <div class="m-5 "><img title="Facebook" src="./images/icons/icon-facebook.svg" class="w-20 z-9 sticky l1"></div>
+        <div class="m-5 "><img title="Instagram" src="./images/icons/icon-instagram.svg" class="w-20 z-9 sticky l2">
+        </div>
+        <div class="m-5 "><img title="Pinterest" src="./images/icons/icon-pinterest.svg" class="w-20 z-9 sticky l3">
+        </div>
+        <div class="m-5 "><img title="Twitter" src="./images/icons/icon-twitter.svg" class="w-20 z-9 sticky l4">
+        </div>
+        <div class="m-5 "><img title="Youtube" src="./images/icons/icon-youtube.svg" class=" w-20 z-9 sticky l5">
+        </div>
+      </div>
+      <div class="flex flex-col mx-auto w-full h-full text-center mt-20 mb-20">
+        <a href="mailto:company@abc.com" class="text-2xl dynapuff">company@abc.com</a>
+        <a onclick="location.reload()" class="text-2xl dynapuff">Our Site</a>
+      </div>
+      <hr>
+      <div
+        class="container flex flex-col items-center justify-between px-6 py-24 mx-auto space-y-12 md:py-12 md:flex-row md:space-y-0">
+
+        <!--Heading-->
+
+        <h2 class="text-5xl font-bold leading-tight text-center text-white md:text-4xl md:max-w-xl md:text-left">
+          Simplyfy how our team work today
+        </h2>
+        <!--Button-->
+        <div>
+          <a href="#"
+            class="box-btn w-max mx-auto p-3 rounded-full px-6 pt-2 shadow-2xl text-blue-700 bg-white baseline hover:bg-gray-900 md:block">Get
+            Started</a>
+        </div>
+      </div>
+      <div class="w-full h-full  flex justify-center items-center">
+        <span class="text-white">&copy; <span id="year"></span> All rights
+          reserved by
+          ncoderlk</span>
+      </div>
+    </footer>
+    <footer class="md:hidden w-full h-screen flex flex-col">
+
+      <h1 class="text-2xl dynapuff text-white text-center">Contact Us</h1>
+
+      <img class="w-16 h-16 m-3 mx-auto l1 mt-10" src="./images/icons/icon-facebook.svg">
+      <img class="w-16 h-16 m-3 mx-auto l2" src="./images/icons/icon-instagram.svg">
+      <img class="w-16 h-16 m-3 mx-auto l3" src="./images/icons/icon-pinterest.svg">
+      <img class="w-16 h-16 m-3 mx-auto" src="./images/icons/icon-twitter.svg">
+      <img class="w-16 h-16 m-3 mx-auto l5" src="./images/icons/icon-youtube.svg">
+      <div class="flex flex-col mx-auto w-full h-full text-center mt-20 mb-20">
+        <a href="mailto:company@abc.com" class="text-2xl dynapuff">company@abc.com</a>
+        <a onclick="location.reload()" class="text-2xl dynapuff">Our Site</a>
+      </div>
+    </footer>
+
+    <hr class="md:hidden">
     <div
-      class="container flex flex-col items-center justify-between px-6 py-24 mx-auto space-y-12 md:py-12 md:flex-row md:space-y-0">
+      class="md:hidden container flex flex-col items-center justify-between px-6 py-24 mx-auto space-y-12 md:py-12 md:flex-row md:space-y-0">
 
       <!--Heading-->
 
@@ -278,17 +353,25 @@
       </h2>
       <!--Button-->
       <div>
-        <a href=""
-          class="box-btn w-max mx-auto p-3 rounded-full px-6 pt-2 shadow-2xl text-blue-700 bg-white baseline hover:bg-gray-900 md:block">Get
+        <a href="#"
+          class="box-btn w-max flex flex-row mx-auto p-3 rounded-full px-6 pt-2 shadow-2xl text-blue-700 bg-white baseline hover:bg-gray-900 md:block">Get
           Started</a>
       </div>
     </div>
-  </section>
-  <footer class="scroll-smooth sticky backdrop:hidden h-full w-full">
+    <div class="w-full h-full">
+      <div class="md:hidden z-10 left-0 top-1/2 p-0 sticky">
+        <span class="text-white">&copy; <span id="yearM"></span> All rights
+          reserved by
+          ncoderlk</span>
+      </div>
 
-  </footer>
+    </div>
+  </section>
+
   <script src="./js/scroll.js"></script>
   <script src="./js/index.js"></script>
+  <script src="./js/year.js"></script>
+  <!-- <script src="./js/text-so.js"></script> -->
   <!------->
 </body>
 

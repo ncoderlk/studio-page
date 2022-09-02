@@ -1,5 +1,6 @@
 const btn = document.getElementById("menuButton");
 const menu = document.getElementById("menu");
+// const nav = document.getElementById("nav");
 
 btn.addEventListener("click", () => {
   btn.style.outline = "none";
@@ -7,6 +8,10 @@ btn.addEventListener("click", () => {
   menu.classList.toggle("flex");
   menu.classList.toggle("hidden");
 });
+// nav.addEventListener("click", () => {
+//   nav.classList.toggle("sticky");
+//   nav.classList.toggle("relative");
+// });
 // // Define selector for selecting
 // // anchor links with the hash
 // let anchorSelector = 'a[href^="#"]';
